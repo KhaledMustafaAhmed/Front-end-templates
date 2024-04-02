@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.progress-bar{
+    width: 200px;
+    margin: 10px 0;
+    height: 3px;
+    background-color: #eee;
+    position: relative;
+}
+.circle .progress-bar::before,
+.box .progress-bar::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -4px;
+}
+.Triangle-up .progress-bar::before,
+.Triangle-down .progress-bar::before{
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    bottom: 3px;
+    border-color: transparent transparent blue;
+}
+
+
+.progress-bar span{
+    width: 50%;
+    height: 100%;   
+    display: block; 
+}
+.heading{
+    margin-bottom: 15px;
+}
+.title{
+    margin-bottom: 15px;
+}
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.orange{
+    color: orange;
+}
+.circle .progress-bar::before{
+    border-radius: 50%;
+}
+.blue .progress-bar span,
+.circle .blue .progress-bar::before,
+.box .blue .progress-bar::before
+{
+    background-color: blue;
+}
+.red .progress-bar span,
+.circle .red .progress-bar::before,
+.box .red .progress-bar::before{
+    background-color: red;
+}
+.green .progress-bar span,
+.circle .green .progress-bar::before,
+.box .green .progress-bar::before{
+    background-color: green;
+}
+.orange .progress-bar span,
+.circle .orange .progress-bar::before,
+.box .orange .progress-bar::before{
+    background-color: orange;
+}
+.Triangle-up .progress-bar::before{
+    
+}

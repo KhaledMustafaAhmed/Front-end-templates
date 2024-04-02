@@ -1,0 +1,31 @@
+body, html{
+    margin: 0;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.8em;
+    color: #000;
+    font-weight: bold;
+
+}
+.pimg-1{
+    background: url("../img/pexels-jimmy-teoh-951539.jpg") no-repeat center center / cover;
+    background-attachment: fixed;
+    min-height: 100%;
+    opacity: 0.7;
+}
+.pimg-2{
+    background: url("../img/pexels-jimmy-chan-3988297.jpg") no-repeat center center / cover;
+    min-height: 400px;
+    background-attachment: fixed;
+    opacity: 0.7;
+
+
+}
+.pimg-3{
+    background: url("../img/pexels-pixabay-290595\ \(1\).jpg") no-repeat center center / cover;
+    min-height: 400px;
+    background-attachment: fixed;
+    opacity: 0.7;
+
+
+}

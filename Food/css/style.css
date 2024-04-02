@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color: #ff702a;
+    --text-color: #fff;
+    --bg-color: #1e1c2a;
+    --big-font: 3.5rem;
+    --h2-font: 1.8rem;
+    --p-font: 0.9rem;
+    --main-transition: 0.3s
+}
+*::selection{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bg-color);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.logo{
+    color: var(--main-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.navbar{
+    display: flex;
+}
+.navbar li{
+    padding: 0 15px;
+}
+.navbar li a{
+   color: var(--text-color);
+   font-size: 1.1rem;
+   font-weight: 500;
+   transition: var(--main-transition);
+}
+.navbar li a:hover{
+    color: var(--main-color);
+}
+#menu-icon{ 
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.home__content{
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90vh; 
+}
+.home-info h1{
+    font-size: var(--big-font);
+    font-weight: bold;
+    color: var(--main-color);
+    text-transform: capitalize;
+    margin: 0;
+}
+.home-info h2{
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+    text-transform: uppercase;
+}
+.btn{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    border-radius: 0.5rem;
+    transition: var(--main-transition);
+}
+.btn:hover{
+    transform: scale(1.2) translateY(10px);
+
+}
+ .home-image img{
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    
+}
+.about__content{
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.about-image {
+    flex-basis: 50%;    
+}
+.about-image img{
+    max-width: 100%;
+    width: 400px;
+}
+.about-text{
+    flex-basis: 50%;
+}
+.about-text p:first-of-type{
+    color: var(--main-color);
+    font-size: var(--p-font);
+    margin: 0 0 5px;
+    font-weight: 700;
+}
+.about-text h2{
+    color: #fff;
+    font-size: var(--h2-font);
+}
+.about-text p:last-of-type{
+    color: var(--p-color);
+    line-height: 1.8 ;
+    font-size: var(--p-font);
+    margin: 15px 0;
+    font-weight: normal;
+}
+.food-menu{
+    padding: 80px;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.heading span{
+    color: var(--main-color);
+    font-size: 1rem;
+    margin: 0 0 5px;
+    font-weight: 700;
+}
+.heading h2{
+    color: #fff;
+    font-size: var(--h2-font);
+}
+.menu-items{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    gap: 1.5rem;
+    margin: 70px auto;
+}
+.menu-item{
+    background-color: #feeee7;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: var(--main-transition);
+}
+.menu-item:hover{
+    transform: translateY(-10px);
+}
+.menu-item-image{
+    width: 220px;
+    height: 220px;
+}
+.menu-item-image img{
+    width: 100%;
+    height: 100%;
+}
+.menu-item h2{
+    color: var(--bg-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+.menu-item h3{
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.menu-item span{
+    color: var(--main-color);
+    display: inline-block;
+    font-weight: bold;
+}
+.menu-item i{
+    background-color: var(--main-color);
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.service__content{
+    padding: 80px;
+}
+.services-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 70px 0;
+}
+.service-image img{
+    width: 100px;
+}
+.services-items-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-info{
+    text-align: center;
+}
+.service-info span{
+    display: inline-block;
+    color: var(--main-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.service-info p{
+    color: #fff;
+    line-height: 1.8;
+    font-size: var(--p-font);
+}
+ .quality{
+    margin: 70px  auto;
+    background-color: #feeee7c5;
+    padding: 70px;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+ .quality h2{
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.footer{
+    padding: 80px ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis : 25%;
+}
+.col h4{
+    color: #fff;
+    margin-bottom: 15px;
+    position: relative;
+}
+.col h4:after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: var(--main-color);
+    bottom: -10px;
+    left: 0;
+}
+.col:not(:last-of-type) ul li{
+    padding: 10px 0;
+    transition: var(--main-transition);
+}
+.col:not(:last-of-type) ul li:hover{
+    transform: translateX(10px);
+}
+.col ul li a{
+    color: gray;
+}
+.col ul li a:hover{
+    color: var(--main-color);
+
+}
+.col:last-of-type ul li{
+    display: inline-block;
+    padding: 5px;
+}
+.col ul li i{
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: var(--main-transition);
+}
+.col ul li i:hover{
+    background-color: #fff;
+    color: var(--bg-color);
+    transform: scale(1.1);
+}
+/* responsive */
+
+
+
+    
+
+
